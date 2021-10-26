@@ -1,0 +1,31 @@
+//Floyd_Septiara Tri Puspita_Program Konversi Mata Uang Rupiah dan US Dollar//
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    bool choice;
+    float rupiah, us_dollar;
+    
+    cout<<"Konversi Mata Uang\n";
+    cout<<"Kurs per tanggal 26 Oktober 2021 : 14145.30\n";
+    cout<<"Silahkan pilih converter anda!\n";
+    cout<<"0. Rupiah ke US Dollar\t 1. US Dollar ke Rupiah";
+    cout<<"\nPilihan : ";
+    cin>>choice;
+    
+    if (choice==0){
+        cout<<"\nBerapa jumlah rupiah Anda? ";
+        cin>>rupiah;
+        us_dollar=rupiah/14145.30;
+        cout<<"\nNilai Rupiah Anda dalam US Dollar : "<<us_dollar;
+    }  
+        else if(choice==1){
+            cout<<"\nBerapa jumlah US dollar Anda? ";
+            cin>>us_dollar;
+            rupiah=us_dollar*14145.30;
+            cout<<"\nNilai Rupiah Anda dalam US Dollar : "<<rupiah;
+        }
+    return 0;
+}
